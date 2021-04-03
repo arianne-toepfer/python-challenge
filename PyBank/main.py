@@ -46,4 +46,4 @@ with open(csvpath) as csvfile:
     print(f"Total Profits: {Total}")
     print(f"Average Change: {Average}")
     print("Greatest Increase in Profits: " + Dictionary["Date"].pop(25), Dictionary["Profit_Loss"].pop(25))
-    print("Greatest Decrease in Profits: " + Dictionary["Date"].pop(44), Dictionary["Profit_Loss"].pop(44))
+    print("Greatest Decrease in Profits: " + Dictionary["Date"].pop(43), Dictionary["Profit_Loss"].pop(43))
