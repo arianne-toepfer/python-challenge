@@ -2,8 +2,6 @@ import os
 import csv
 csvpath= r'C:\Users\Arianne\Desktop\PythonStuff\Python_Challenge_Homework\python-challenge\PyPoll\Resources\election_data .csv'
 
-#def election_results(poll):
-#total Votes
 #create list of candidates,the percentage of votes they won, and the total number of votes they won
 #percentage of votes
 #find the winner of the election
@@ -21,10 +19,9 @@ with open(csvpath) as csvfile:
 
         #finding candidates
         candidates = []
-        for x in range(int(row[1])):
-            if x not in candidates:
-                candidates.append(x)
-                count+=1
+        person = " "
+        if person ==row[2]:
+            candidates.append(person)
     
     print(votes)
     print(candidates)
