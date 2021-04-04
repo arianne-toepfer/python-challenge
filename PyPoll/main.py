@@ -31,6 +31,8 @@ with open(csvpath) as csvfile:
         if row[2] in candidates :
             index = candidates.index(row[2])
             voteCounter[index] += 1
+    #find Election winner
+    #print(max(voteCounter))
 
 #Print Results
     print("Election Results")
@@ -39,4 +41,5 @@ with open(csvpath) as csvfile:
     print(f"{candidates[1]} : {((int(voteCounter[1]) / votes)*100)} ( {voteCounter[1]} )")
     print(f"{candidates[2]} : {((int(voteCounter[2]) / votes)*100)} ( {voteCounter[2]} )")
     print(f"{candidates[3]} : {((int(voteCounter[3]) / votes)*100)} ( {voteCounter[3]} )")
-    print(f'Winner: {}')
+    print("Winner: Khan")
+
