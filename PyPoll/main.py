@@ -12,16 +12,20 @@ with open(csvpath) as csvfile:
     csvreader=csv.reader(csvfile, delimiter=",")
     header=next(csvreader)
     votes=0
-    count=1
+   
     for row in csvreader:
         #total votes
         votes += 1
 
-        #finding candidates
+        #finding candidates and adding them to a list 
         candidates = []
-        person = " "
-        if person ==row[2]:
-            candidates.append(person)
+        if not candidates:
+            candidates.append(row[2])
+        for candidate in candidates:
+            if candidate != row[2]:
+                candidates.append(row[2])
+
+
     
     print(votes)
     print(candidates)
